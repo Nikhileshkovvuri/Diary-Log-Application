@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".DiaryDatePage1">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <!--View Entries button goes to DiaryLogPage3-->
+        <Button
+            android:id="@+id/viewEntryButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#E8CF2D"
+            android:fontFamily="monospace"
+            android:padding="14dp"
+            android:text="View Entries"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+
+        <!--Status of date selection shown here-->
+        <TextView
+            android:id="@+id/returnDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="25dp"
+            android:text="No Date Selected"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="22sp"  />
+
+        <!--Selected date will be displayed in the text view below-->
+        <TextView
+            android:id="@+id/showDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="25dp"
+            android:text="DD-MM-YYYY"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+
+
+        <!--Date selection button used to select specific date-->
+        <Button
+            android:id="@+id/pickDateButton"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:background="#E8CF2D"
+            android:fontFamily="monospace"
+            android:padding="20dp"
+            android:text="Select date"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+        <!--Confirmation button here is used to confirm and store the date in the DiaryDateStore-->
+        <Button
+            android:id="@+id/confirmDate"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="#E8CF2D"
+            android:fontFamily="monospace"
+            android:padding="20dp"
+            android:text="Confirm Date"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+</LinearLayout>

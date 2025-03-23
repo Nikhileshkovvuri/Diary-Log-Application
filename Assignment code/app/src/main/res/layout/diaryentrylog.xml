@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".DiaryLogPage3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <!--New Entry Button is used to go to diarydate page-->
+            <Button
+                android:id="@+id/newEntryButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:background="#E8CF2D"
+                android:fontFamily="monospace"
+                android:padding="14dp"
+                android:text="New Entry"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <!--Delete all entries button used to delete all stored entries-->
+            <Button
+                android:id="@+id/deleteAllEntry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:background="#E8CF2D"
+                android:fontFamily="monospace"
+                android:padding="14dp"
+                android:text="Delete All Entries"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+        </RelativeLayout>
+
+        <!--TextView is used to display the heading here-->
+        <TextView
+            android:id="@+id/myDiaryText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="14dp"
+            android:text="My Diary"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="22sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <!--TextView used to show all entries-->
+        <TextView
+            android:id="@+id/entryLogText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="20dp"
+            android:scrollbars="vertical"
+            android:text="No Entries Found"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Filter Date Button used to find entry of specified date from DiaryDataStore-->
+        <Button
+            android:id="@+id/dateFilterButton"
+            android:layout_width="70dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#E8CF2D"
+            android:fontFamily="monospace"
+            android:text="Filter date"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <!--Refresh Diary Button used to show the new stored entries-->
+        <Button
+            android:id="@+id/refreshButton"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="#E8CF2D"
+            android:fontFamily="monospace"
+            android:text="Refresh Diary"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="6dp"
+        android:layout_gravity="bottom"
+        android:layout_weight="0">
+
+        <!--Delete Filtered Entry is used to delete the entry that was specifically filtered-->
+        <Button
+            android:id="@+id/deleteDateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="#E8CF2D"
+            android:fontFamily="monospace"
+            android:padding="14dp"
+            android:text="Delete Filtered Entry"
+            android:textColor="@color/black"
+            android:layout_marginBottom="20dp"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+</LinearLayout>

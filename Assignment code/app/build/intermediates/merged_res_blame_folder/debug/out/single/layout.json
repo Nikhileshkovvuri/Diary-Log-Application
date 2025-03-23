@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Users\\USER\\Desktop\\fragments\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\diarydate.xml",
+        "source": "C:\\Users\\USER\\Desktop\\fragments\\app\\src\\main\\res\\layout\\diarydate.xml"
+    },
+    {
+        "merged": "C:\\Users\\USER\\Desktop\\fragments\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "C:\\Users\\USER\\Desktop\\fragments\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\USER\\Desktop\\fragments\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\diaryentry.xml",
+        "source": "C:\\Users\\USER\\Desktop\\fragments\\app\\src\\main\\res\\layout\\diaryentry.xml"
+    },
+    {
+        "merged": "C:\\Users\\USER\\Desktop\\fragments\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\diaryentrylog.xml",
+        "source": "C:\\Users\\USER\\Desktop\\fragments\\app\\src\\main\\res\\layout\\diaryentrylog.xml"
+    }
+]
